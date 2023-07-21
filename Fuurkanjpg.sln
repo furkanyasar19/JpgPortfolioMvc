@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1321
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fuurkanjpg", "Fuurkanjpg\Fuurkanjpg.csproj", "{56E9EDA3-E23F-4525-AE84-430D8FCE25B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56E9EDA3-E23F-4525-AE84-430D8FCE25B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E9EDA3-E23F-4525-AE84-430D8FCE25B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E9EDA3-E23F-4525-AE84-430D8FCE25B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E9EDA3-E23F-4525-AE84-430D8FCE25B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D789A5E5-0459-4FE5-89A1-255DD17E66A6}
+	EndGlobalSection
+EndGlobal

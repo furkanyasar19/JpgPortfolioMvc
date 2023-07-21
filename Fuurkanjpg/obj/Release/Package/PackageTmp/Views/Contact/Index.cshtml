@@ -1,0 +1,111 @@
+﻿@model Fuurkanjpg.Models.Siniflar.Iletisim
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<div class="w3l-contact-10 py-5" id="contact">
+    <div class="form-41-mian pt-lg-4 pt-md-3 pb-4">
+        <div class="container">
+            <div class="heading text-center mx-auto">
+                <br /><br />
+
+                <h3 class="hny-title mb-2">İletişim</h3>
+
+            </div>
+            <div class="row">
+
+
+                <div class="col-lg-4 contacts-5-grid-main section-gap mb-lg-0 mb-4 pr-lg-5">
+                    <div class="contacts-5-grid">
+                        <div class="map-content-5">
+                            <section class="tab-content">
+                                <div class="contact-type">
+                                    <div class="address-grid mb-3">
+                                        <span class="pos-icon">
+                                            <span class="fa fa-map"></span>
+                                        </span>
+                                        <div class="ad-right">
+                                            <h6>Adres</h6>
+                                            <p>Pendik/İstanbul</p>
+                                        </div>
+                                    </div>
+                                    <div class="address-grid mb-3">
+                                        <span class="pos-icon">
+                                            <span class="fa fa-envelope">
+
+                                            </span>
+                                        </span>
+                                        <div class="ad-right">
+                                            <h6>Mail</h6>
+                                            <a href="mailto:furkanyasar19@outlook.com" class="link1">furkanyasar19@outlook.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="address-grid">
+                                        <span class="pos-icon">
+                                            <span class="fa fa-headphones"></span>
+                                        </span>
+                                        <div class="ad-right">
+                                            <h6>Telefon</h6>
+                                            <p>546 934 0980</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 form-inner-cont">
+                    @*<form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+                            <div class="form-grids">
+                                <div class="form-input">
+                                    <input type="text" name="w3lName" id="w3lName" placeholder="İsminiz *"
+                                           required="" />
+                                </div>
+                                <div class="form-input">
+                                    <input type="text" name="w3lSubject" id="w3lSubject" placeholder="Konu "
+                                           required />
+                                </div>
+                                <div class="form-input">
+                                    <input type="email" name="w3lSender" id="w3lSender" placeholder="Mail *"
+                                           required />
+                                </div>
+                                <div class="form-input">
+                                    <input type="text" name="w3lPhone" id="w3lPhone" placeholder="Telefon *"
+                                           required />
+                                </div>
+                            </div>
+                            <div class="form-input">
+                                <textarea name="w3lMessage" id="w3lMessage" placeholder="Mesajınız.."
+                                          required=""></textarea>
+                            </div>
+                            <div class="text-right">
+                                <button class="btn btn-style btn-primary">Gönder</button>
+                            </div>
+                        </form>*@
+
+                    <form class="form-group" method="post">
+                        <div class="form-grids">
+                            @Html.TextBoxFor(x => x.Isim, new { @class = "", placeholder = "İsminiz *", @required = "required" })
+                          
+                            @Html.TextBoxFor(x => x.Konu, new { @class = "form-input", placeholder = "Konu ", @required = "required" })
+                           
+                            @Html.TextBoxFor(x => x.Email, new {type="email", @class = "form-input", placeholder = "Mail *", @required = "required" })
+                          
+                            @Html.TextBoxFor(x => x.Numara, new { @class = "form-input", placeholder = "Telefon *", @required = "required" })
+                            
+                            @Html.TextAreaFor(x => x.Mesaj, new {@style="width:100%;height:200px", @class = "form-input", placeholder="Mesajınız..", @required = "required" })
+                           
+                            <div class="text-right">
+                                <button class="btn btn-style btn-primary">Gönder</button>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- //contacts-5-grid -->
+    </div>
+</div>

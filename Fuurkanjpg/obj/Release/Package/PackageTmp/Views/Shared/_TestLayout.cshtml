@@ -1,0 +1,252 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Fuurkanjpg </title>
+    <link href="//fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="~/Template/assets/css/style-starter.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header id="site-header" class="w3l-header-4 fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+                <h1>
+                    <a class="navbar-brand" href="/Default/Index">
+                        Fu<span class="sub-spl">u</span>rkan<span class="sub-spl">jpg</span>
+                    </a>
+                </h1>
+                <!-- if logo is image enable this
+                <a class="navbar-brand" href="#index.html">
+                    <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+                </a> -->
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                    </span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Default/Index">Ana Sayfa<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/About/Index">Hakkımda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Contact/Index">İletişim</a>
+                        </li>
+                    </ul>
+
+                    <!-- //toggle switch for light and dark theme -->
+                    <!-- search popup -->
+                    <div id="search" class="pop-overlay">
+                        <div class="popup">
+                            <form action="#" method="GET" class="d-sm-flex">
+                                <input type="search" placeholder="Search.." name="search" required="required" autofocus>
+                                <button type="submit">Search</button>
+                                <a class="close" href="#url">&times;</a>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /search popup -->
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="mobile-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
+            </nav>
+        </div>
+    </header>
+    @RenderBody()
+    <footer class="footer-28 py-5">
+        <div class="container py-lg-3">
+           
+            <div class="row footer-top-28">
+                <div class="col-lg-6 footer-list-28 pr-lg-5 mt-5">
+                    <h6 class="footer-title-28">İletişim Bilgileri</h6>
+                    <p class="pr-lg-5">
+                        İletişim sayfasından veya sosyal medya hesaplarımdan bana ulaşabilirsiniz.
+                    </p>
+
+                   
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6 col-6 footer-list-28 mt-5">
+                            <h6 class="footer-title-28">Kullanışlı Bağlantılar</h6>
+                            <ul>
+                                <li><a href="/About/Index">Hakkımda</a></li>
+                                <li><a href="/Contact/Index">İletişim</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 col-6 footer-list-28 mt-5">
+                            <h6 class="footer-title-28">Sosyal Medya</h6>
+                            <div class="main-social-footer-28 mt-3">
+                                <ul class="social-icons">
+                                    <li class="facebook">
+                                        <a href="https://www.linkedin.com/in/furkan-ya%C5%9Far-956a1b1a1/" target="_blank" title="Linkedin">
+                                            <span class="fa fa-linkedin" aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                    <li class="twitter">
+                                        <a href="https://github.com/furkanyasar19" target="_blank" title="Github">
+                                            <span class="fa fa-github" aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                    <li class="dribbble">
+                                        <a href="https://www.pexels.com/tr-tr/fotograf/gun-batimi-10256332/" target="_blank" title="Pexels">
+                                            <span class="fa fa-camera" aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                    <li class="google">
+                                        <a href="https://www.instagram.com/fuurkanjpg/" target="_blank" title="Instagram">
+                                            <span class="fa fa-instagram" aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- move top -->
+        <button onclick="topFunction()" id="movetop" title="Başa git">
+            &#10548;
+        </button>
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function () {
+                scrollFunction()
+            };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("movetop").style.display = "block";
+                } else {
+                    document.getElementById("movetop").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        <!-- /move top -->
+        <!-- //footer-28 block -->
+    </footer>
+    <!-- all js scripts and files here -->
+
+    <script src="~/Template/assets/js/theme-change.js"></script><!-- theme switch js (light and dark)-->
+
+    <script src="~/Template/assets/js/jquery-3.3.1.min.js"></script><!-- default jQuery -->
+    <script src="~/Template/assets/js/owl.carousel.js"></script>
+    <!-- script for tesimonials carousel slider -->
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo1").owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    1000: {
+                        items: 1,
+                        nav: false,
+                        loop: false
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script for tesimonials carousel slider -->
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- disable body scroll which navbar is in active -->
+    <!--/MENU-JS-->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!--//MENU-JS-->
+    <!-- jQuery-Photo-filter-lightbox-portfolio-plugin -->
+    <script src="~/Template/assets/js/jquery-1.7.2.js"></script>
+    <script src="~/Template/assets/js/jquery.quicksand.js"></script>
+    <script src="~/Template/assets/js/script.js"></script>
+    <script src="~/Template/assets/js/jquery.prettyPhoto.js"></script>
+    <!-- //jQuery-Photo-filter-lightbox-portfolio-plugin -->
+    <!-- bootstrap js -->
+    <script src="~/Template/assets/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

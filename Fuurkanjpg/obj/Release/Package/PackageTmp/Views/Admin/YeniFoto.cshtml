@@ -1,0 +1,17 @@
+﻿@model Fuurkanjpg.Models.Siniflar.Fotolar
+@{
+    ViewBag.Title = "YeniFoto";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Fotoğraf Ekle</h2>
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.FotoUrl)
+    @Html.TextBoxFor(x => x.FotoUrl, new { @class = "form-control" , @required = "required" })
+    <br />
+    @Html.LabelFor(x => x.Baslik)
+    @Html.TextBoxFor(x => x.Baslik, new { @class = "form-control" , @required = "required" })
+    <br />
+    <button class="btn btn-primary">Ekle</button>
+</form>

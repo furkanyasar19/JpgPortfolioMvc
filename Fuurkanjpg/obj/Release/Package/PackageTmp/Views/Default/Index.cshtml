@@ -1,0 +1,51 @@
+﻿@using Fuurkanjpg.Models.Siniflar
+@model List<Header>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_TestLayout.cshtml";
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="zxx">
+
+
+
+<body>
+    <!-- header -->
+    
+    <!-- //header -->
+    <!-- banner -->
+    <section class="bannerhny w3pvt-banner" id="home">
+        <div class="container">
+            <div class="banner-info text-center mx-auto">
+                <div class="w3pvt-logo align-self">
+                    <span class="fa fa-camera" aria-hidden="true"></span><br />
+                    @foreach (var x in Model)
+                    {
+                        <h3>@x.Baslik</h3>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //banner -->
+    <!--/gallery -->
+    @Html.Action("FotoPartial","Default")
+    <!-- //gallery-->
+    <!-- testimonials -->
+    @Html.Action("GunSozPartial","Default")
+    <!-- //testimonials -->
+    <!-- middle slider -->
+    
+
+
+</body>
+
+</html>

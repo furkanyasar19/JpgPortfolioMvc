@@ -1,0 +1,18 @@
+﻿@model Fuurkanjpg.Models.Siniflar.Hakkimda
+@{
+    ViewBag.Title = "YeniHakkimda";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yeni Hakkımda Ekle</h2>
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.HakkimdaFoto)
+    @Html.TextBoxFor(x => x.HakkimdaFoto, new { @class = "form-control", @required = "required" })
+    <br />
+    @Html.LabelFor(x => x.HakkimdaYazi)
+    @Html.TextBoxFor(x => x.HakkimdaYazi, new { @class = "form-control", @required = "required" })
+    <br />
+    <button class="btn btn-primary">Ekle</button>
+</form>
+

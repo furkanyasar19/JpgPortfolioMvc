@@ -1,0 +1,18 @@
+﻿@model Fuurkanjpg.Models.Siniflar.GununSozu
+@{
+    ViewBag.Title = "YeniSoz";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Söz Ekle</h2>
+
+<br />
+<form class="form-group" method="post">
+    @Html.LabelFor(x => x.GunSoz)
+    @Html.TextBoxFor(x => x.GunSoz, new { @class = "form-control", @required = "required" })
+    <br />
+    @Html.LabelFor(x => x.Yazar)
+    @Html.TextBoxFor(x => x.Yazar, new { @class = "form-control", @required = "required" })
+    <br />
+    <button class="btn btn-primary">Ekle</button>
+</form>

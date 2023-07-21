@@ -1,0 +1,42 @@
+﻿@using Fuurkanjpg.Models.Siniflar
+@model List<GununSozu>
+
+<section class="w3l-clients-1" id="testimonials">
+    <!-- /grids -->
+    <div class="cusrtomer-layout py-5">
+        <div class="container py-lg-5 py-md-4">
+            <div class="heading align-self text-center">
+                <h3 class="hny-title">Günün Sözü</h3>
+            </div>
+            <!-- /grids -->
+            <div class="testimonial-row mt-5">
+                <div id="owl-demo1" class="owl-two owl-carousel owl-theme mb-md-3 mb-sm-5 mb-4">
+                    <div class="item">
+                        <div class="testimonial-content">
+                            @foreach (var x in Model)
+                            {
+                                <div class="testimonial">
+                                    <blockquote>
+                                        <q>
+                                            @x.GunSoz
+                                        </q>
+                                    </blockquote>
+                                    <div class="separatorhny"></div>
+                                    <div class="testi-des">
+                                        <div class="peopl align-self">
+                                            <h3>@x.Yazar</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- /grids -->
+    </div>
+    <!-- //grids -->
+</section>

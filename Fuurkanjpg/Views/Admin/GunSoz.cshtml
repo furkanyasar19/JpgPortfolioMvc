@@ -1,0 +1,29 @@
+﻿@using Fuurkanjpg.Models.Siniflar
+@model List<GununSozu>
+
+@{
+    ViewBag.Title = "GunSoz";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Günün Sözü</h2>
+<br />
+<a href="/Admin/YeniSoz" class="btn btn-primary">Söz Ekle</a>
+<br /><br />
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>Günün Sözü</th>
+        <th>Yazar</th>
+        <th>Sil</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ID</td>
+            <td>@x.GunSoz</td>
+            <td>@x.Yazar</td>
+            <td><a href="/Admin/GunSozSil/@x.ID" class="btn btn-danger">Sil</a></td>
+        </tr>
+    }
+</table>

@@ -1,0 +1,31 @@
+﻿@using Fuurkanjpg.Models.Siniflar
+@model List<Iletisim>
+@{
+    ViewBag.Title = "Iletisim";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>İletişim</h2>
+<br />
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>İsim</th>
+        <th>Konu</th>
+        <th>Email</th>
+        <th>Numara</th>
+        <th>Mesaj</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ID</td>
+            <td>@x.Isim</td>
+            <td>@x.Konu</td>
+            <td>@x.Email</td>
+            <td>@x.Numara</td>
+            <td>@x.Mesaj</td>
+            <td><a href="/Admin/IletisimSil/@x.ID" class="btn btn-danger">Sil</a></td>
+        </tr>
+    }
+</table>
